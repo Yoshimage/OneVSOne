@@ -16,10 +16,22 @@
           </block>
         </value>
         <statement name="DO">
-          <block type="movement_right" id="121"></block>
+          <block type="movement_left" id="198"></block>
         </statement>
         <next>
-          <block type="movement_stop" id="51"></block>
+          <block type="controls_repeat" id="168" inline="true">
+            <value name="TIMES">
+              <block type="math_number" id="175">
+                <field name="NUM">125000</field>
+              </block>
+            </value>
+            <statement name="DO">
+              <block type="movement_forward" id="155"></block>
+            </statement>
+            <next>
+              <block type="movement_stop" id="51"></block>
+            </next>
+          </block>
         </next>
       </block>
     </next>
